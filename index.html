@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script-bonus.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Simon Says</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="title">
+          Simon Says
+        </h1>
+      </header>
+
+      <main>
+        <section class="messaggio">
+          <h2>Benvenuto in una nuova partita!</h2>
+          <p>In questo gioco ti vengono mostrati una serie di numeri. <br>Cerca di memorizzarli il meglio possibile, hai pochi secondi per farlo!</p>
+          <p>Successivamente dovrai inserire i numeri che sei riuscito a ricordare. <br>Il punteggio è determinato da quanti numeri riesci a indovinare.</p>
+          <div class="btn"><span>Clicca qui per cominciare la partita</span></div>
+        </section>
+
+        <section class="selezione-limiti hide">
+          <div>Scegli un livello di difficoltà.</div>
+        </section>
+
+        <section class="timer hide">
+          <span>Hai</span>
+          <div class="second"></div>
+          <span>per memorizzare i numeri.</span>
+        </section>
+
+        <section class="number hide">
+          <div class="display-number"></div>
+        </section>
+
+        <section class="inserisci hide">
+          <div>Inserisci i numeri che ricordi!</div>
+        </section>
+
+        <section class="punteggio hide">
+          <div class="risultato">Hai indovinato questi numeri:<br/></div>
+          <div class="punti"></div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  box-shadow: 1px 1px 10px 1px #9137c7;
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+header .title {
+  text-align: center;
+  font-size: 35px;
+  text-shadow: 1px 1px 1px blue;
+  color: #9137c7;
+  height: 80px;
+  line-height: 80px;
+}
+
+main.section {
+  position: relative;
+}
+
+main section.messaggio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 400px;
+}
+
+section.messaggio h2 {
+  color: #fc8033;
+  text-shadow: 1px 1px 1px blue;
+}
+
+section.messaggio p {
+  text-align: center;
+  padding: 0 20px;
+  font-size: 25px;
+  color: #fff;
+  text-shadow: 1px 1px 1px blue;
+}
+
+section.messaggio .btn {
+  height: 80px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: #9137c7;
+  color: #fc8033;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+section.messaggio .btn:hover {
+  cursor: pointer;
+  font-size: 15px;
+  border: 1px solid #fc8033;
+}
+
+section.messaggio .btn span {
+  color: #fc8033;
+  background-color: #9137c7;
+  font-weight: bold;
+}
+
+main section.timer, section.number,  section.punteggio, section.selezione-limiti, section.inserisci {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 50%;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 1px 1px 1px blue;
+}
+
+section.number {
+  top: 60%;
+  font-weight: bold;
+}
+
+main section.number div, .timer div, .punteggio div {
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+
+section.punteggio .punti {
+  margin-top: 50px;
+}
+
+section.messaggio.hide, .selezione-limiti.hide, .timer.hide, .number.hide, .punteggio.hide, .inserisci.hide {
+  display: none;
+}
